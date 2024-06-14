@@ -16,13 +16,17 @@
 .container {
   margin: 0 auto;
   max-width: 80rem;
-  padding: inherit 1rem;
+  padding-inline: 1rem;
 }
 
 fieldset {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+
+  border: none;
 }
 
 fieldset:disabled {
@@ -38,6 +42,10 @@ fieldset:disabled * {
 fieldset label {
   display: flex;
   gap: 0.25rem;
+}
+
+main {
+  position: relative;
 }
 
 menu {
