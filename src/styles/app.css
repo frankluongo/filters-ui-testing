@@ -1,0 +1,50 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.block {
+  padding-block: clamp(1rem, 5vw, 2rem);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 80rem;
+  padding: inherit 1rem;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+fieldset:disabled {
+  opacity: 0.5;
+
+  cursor: not-allowed;
+}
+
+fieldset:disabled * {
+  pointer-events: none;
+}
+
+fieldset label {
+  display: flex;
+  gap: 0.25rem;
+}
+
+menu {
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
